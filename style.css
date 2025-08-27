@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fff0f5;
+}
+
+ul.navbar {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.navbar li:nth-child(2) {
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  color: red;
+  font-weight: bold;
+  font-size: 23px;
+  font-family: "Playwrite CA", cursive;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.text-block {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text-block h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-block p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#calculator {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+}
+
+.heart {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.heart path {
+  fill: red; /*color for the svg heart*/
+}
+
+.calculator-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.grid-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.grid-container p {
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: hsla(0, 97%, 15%, 0.679);
+}
+
+.grid-container input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.grid-container input:focus {
+  outline: none;
+  border: 2px solid rgb(255, 163, 163);
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+#calculate {
+  background-color: hsla(0, 76%, 23%, 0.679);
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* --- css for responsiveness--- */
+@media (max-width: 400px) {
+  #calculator {
+    width: 250px;
+    height: 250px;
+  }
+  .calculator-content {
+    width: 90%;
+  }
+  .grid-container {
+    flex-direction: column;
+  }
+  .grid-container input {
+    font-size: 14px;
+  }
+  #calculate {
+    width: 130px;
+    height: 30px;
+    font-size: 16px;
+  }
+}

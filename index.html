@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Love Calculator</title>
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul class="navbar">
+        <li><a href="" class="logo">The Love Calculator</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="links.html">Love-Links</a></li>
+      </ul>
+    </header>
+
+    <section id="info">
+      <div class="text-block">
+        <h1>Welcome to this great invention of Doctor Love!</h1>
+        <p>
+          We all know that a name can tell a lot about a person. Names are not
+          randomly chosen: they all have a meaning. Doctor Love knew this so he
+          made another great invention just for the lonely you!
+        </p>
+        <p>
+          Sometimes you'd like to know if a relationship with someone could work
+          out. Therefore Doctor Love himself designed this great machine for
+          you. With The Love Calculator you can calculate the probability of a
+          successful relationship between two people.
+        </p>
+        <p>
+          To find out what the chances for you and your dream partner are, just
+          fill in both full names below, and press Calculate.
+        </p>
+      </div>
+    </section>
+
+    <section id="calculator">
+      <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path
+          fill-rule="evenodd"
+          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+        />
+      </svg>
+
+      <div class="calculator-content">
+        <div class="grid-container">
+          <div class="your-name">
+            <p>Your name</p>
+            <input type="text" id="username1" placeholder="Full name" />
+          </div>
+          <div class="crush-name">
+            <p>Your crush</p>
+            <input type="text" id="username2" placeholder="Full name" />
+          </div>
+        </div>
+        <button id="calculate">Calculate love</button>
+      </div>
+    </section>
+  </body>
+</html>
